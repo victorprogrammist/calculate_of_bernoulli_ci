@@ -4,6 +4,7 @@ Author Telnov Victor, v-telnov@yandex.ru
  
 This code under licence CC BY-NC-ND
 
+```txt
 // It evaluates probability by value of area integral of Bernoulli formula
 
 // With dir_right_to_left == false
@@ -25,3 +26,4 @@ double bernoulli_integral_inverse(
         double p_quantile, bool dir_right_to_left = false,
         double er = 0.00001);
         
+```
