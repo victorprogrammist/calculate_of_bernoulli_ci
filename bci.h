@@ -1,3 +1,6 @@
+/*
+ * Author Telnov Victor, v-telnov@yandex.ru
+ */
 
 #ifndef BERNOULLI_CONFIDENCE_INTERVAL
 #define BERNOULLI_CONFIDENCE_INTERVAL
