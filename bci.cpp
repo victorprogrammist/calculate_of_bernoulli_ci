@@ -1,4 +1,8 @@
 
+/*
+ * Author Telnov Victor, v-telnov@yandex.ru
+ */
+
 #include <cmath>
 #include <cassert>
 
