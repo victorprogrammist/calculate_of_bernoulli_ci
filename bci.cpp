@@ -116,14 +116,19 @@ pair<bool,double> recu__bernoulli_integral_inverse(
 }
 
 double bernoulli_integral_inverse(unum k, unum n, double p_quantile, bool dir_right_to_left, double er) {
-
+    
+#if 0
+    // That function is equivalent such calculus Betta distribution.
+    // I found it later after I did myself function.
+    // And using GSL have mistakes with the huge n.
     if (n < 200) {
         if (!dir_right_to_left)
             return gsl_cdf_beta_Qinv(1.0 - p_quantile, k+1, n-k+1);
         else
             return gsl_cdf_beta_Qinv(p_quantile, k+1, n-k+1);
     }
-
+#endif
+    
     double inner_er = er / (double)(n+1);
 
     double mx = (double)k / (double)n;
