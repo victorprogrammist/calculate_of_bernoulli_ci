@@ -118,9 +118,9 @@ pair<bool,double> recu__bernoulli_integral_inverse(
 double bernoulli_integral_inverse(unum k, unum n, double p_quantile, bool dir_right_to_left, double er) {
     
 #if 0
-    // That function is equivalent such calculus Betta distribution.
-    // I found it later after I did myself function.
-    // And using GSL have mistakes with the huge n.
+    // That function is equivalent such calculus Beta distribution.
+    // I made my function and after later I found function in the GSL.
+    // Using GSL has bags with the huge n.
     if (n < 200) {
         if (!dir_right_to_left)
             return gsl_cdf_beta_Qinv(1.0 - p_quantile, k+1, n-k+1);
