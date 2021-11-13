@@ -6,6 +6,7 @@
 
 #include <cmath>
 #include <cassert>
+#include <utility>
 
 using std::fabs;
 
@@ -71,7 +72,7 @@ double bernoulli(uint k, uint n, double probability) {
     return r;
 }
 
-pair<bool,double> recu__bernoulli_integral_inverse(
+std::pair<bool,double> recu__bernoulli_integral_inverse(
         double er,
         uint k, uint n,
         double x1, double y1, double x2, double y2,
