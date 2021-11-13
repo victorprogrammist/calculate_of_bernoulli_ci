@@ -9,6 +9,7 @@
 
 using std::fabs;
 
+using uint = unsigned int;
 using Extended = long double;
 #define EE(X) static_cast<Extended>(X)
 
@@ -72,7 +73,7 @@ double bernoulli(uint k, uint n, double probability) {
 
 pair<bool,double> recu__bernoulli_integral_inverse(
         double er,
-        unum k, unum n,
+        uint k, uint n,
         double x1, double y1, double x2, double y2,
         double& s_resi) {
 
@@ -115,7 +116,7 @@ pair<bool,double> recu__bernoulli_integral_inverse(
     return {true, ( -b + sqrt(b * b + 2.0 * a * s) ) / a};
 }
 
-double bernoulli_integral_inverse(unum k, unum n, double p_quantile, bool dir_right_to_left, double er) {
+double bernoulli_integral_inverse(uint k, uint n, double p_quantile, bool dir_right_to_left, double er) {
     
 #if 0
     // That function is equivalent such calculus Beta distribution.
