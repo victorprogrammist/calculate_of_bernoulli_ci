@@ -18,8 +18,10 @@
 //    with k = 1 from n = 2 - probability of process more or equal 0.3633
 //    with k = 1 from n = 3 - probability of process more or equal 0.2724
 
+using uint = unsigned int;
+
 double bernoulli_integral_inverse(
-        unum k, unum n,
+        uint k, uint n,
         double p_quantile, bool dir_right_to_left = false,
         double er = 0.00001);
 
