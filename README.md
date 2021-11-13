@@ -25,8 +25,10 @@ This code under licence CC BY-NC-ND
 
 // er - it is a residual error which is somewhat arbitrary
 
+using uint = unsigned int;
+
 double bernoulli_integral_inverse(
-        unum k, unum n,
+        uint k, uint n,
         double p_quantile, bool dir_right_to_left = false,
         double er = 0.00001);
         
