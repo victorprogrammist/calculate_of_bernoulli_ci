@@ -2,7 +2,7 @@
 
 Author Telnov Victor, v-telnov@yandex.ru
  
-This code under licence CC BY-NC-ND
+This code under licence GPL3
 
 ```txt
 // It evaluates the probability by the value of area integral of Bernoulli formula.
