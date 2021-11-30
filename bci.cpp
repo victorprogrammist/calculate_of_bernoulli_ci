@@ -1,7 +1,7 @@
 
 /*
  * Author Telnov Victor, v-telnov@yandex.ru
- * This code under licence CC BY-NC-ND
+ * This code under licence GPL3
  */
 
 #include <cmath>
